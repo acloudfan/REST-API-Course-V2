@@ -1,17 +1,19 @@
+  
 /**
- * Launches the API Listener
+ * Simple tests for all DB operations
  * 
- * Checkout the API implementation in api/v1/vacations.js
+ * Adds the test data to the Database = vacation Collection = vacations
  */
 
-// Provide the DB Parameters below
-// Copy & paste from the tests/TestDbOps.js *OR* edit
-// NOTE: your cluster location will be different than the one below!!!
+
+// The ../db/setting.js uses the environment variable DB_URI
+// Copy the connect string for the mongoDB cluster & paste below
+// Format =>  mongodb+srv://admin:<password>@cluster0-46e5h.mongodb.net/test?retryWrites=true&w=majority
 const DB_USER = "admin"
 const DB_PASSWORD = "admin123"
 const DB_NAME = "acmetravel"
-process.env.DB_URI = "mongodb+srv://"+DB_USER+":"+DB_PASSWORD+"@cluster0-46e5h.mongodb.net/"+DB_NAME+"?retryWrites=true&w=majority"
 
+process.env.DB_URI = "mongodb+srv://"+DB_USER+":"+DB_PASSWORD+"@cluster0-46e5h.mongodb.net/"+DB_NAME+"?retryWrites=true&w=majority"
 
 var express = require('express')
 var bodyParser = require('body-parser')
