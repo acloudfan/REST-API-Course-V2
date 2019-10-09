@@ -14,7 +14,9 @@ var uri = process.env.DB_URI
 // var options = {user:process.env.DB_USER, pass:process.env.DB_PASSWORD}
 
 mongoose.connect(process.env.DB_URI, {
-    useMongoClient: true
+    // useMongoClient: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
   });
 
 // Setup event listeners for the mongoose connections

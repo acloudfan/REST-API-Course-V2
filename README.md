@@ -1,20 +1,21 @@
-Created as part of the course on "REST API". 
-
-Demonstrates the setting up of URI for the REST API
-
-http://www.acloudfan.com/learn-REST-API
+# Created as part of the course on "REST API". 
+# http://www.acloudfan.com/learn-REST-API
+# Demonstrates the setting up of URI for the REST API
 
 
-Following node practices defined here:
-https://github.com/felixge/node-style-guide
-https://blog.risingstack.com/node-js-best-practices/
+Change Log
+==========
+October 2019  Converted the code to use MongoDB Cloud
+              Updated the package.json with latest versions
+              Took care of the depercations
+              Updated the index.js for DB parameters setting
 
-Recent Change - 12/25/2017
-*  Data updated for the testing.
-** Instead of providing the User/Password now the URI for DB is used in the format:
+December 2017 Updated the DB Connection code
+              Data updated for the testing.
+              Instead of providing the User/Password now the URI for DB is used in the format: mongodb://<user>:<password>@SERVER:PORT/DB-NAME
 
-mongodb://<user>:<password>@SERVER:PORT/DB-NAME
-
+Setup
+=====
 1. Clone this project on local file system
 2. Pre-requisistes
       a. Understanding of node/npm
@@ -38,3 +39,8 @@ Create from scratch
 5. npm install the packages (express,body-parser,mongoose)
 
 6. create folder = models
+
+Helpful Links
+=============
+https://github.com/felixge/node-style-guide
+https://blog.risingstack.com/node-js-best-practices/

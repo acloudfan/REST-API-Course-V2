@@ -25,7 +25,8 @@ exports.saveMany = function (rows, callback) {
 // UPDATE the vacation packages
 // http://mongoosejs.com/docs/api.html#model_Model.update
 exports.update = function (criteria, doc, callback) {
-    model.Vacations.update(criteria, doc, function (err, data) {
+    // Replaced .update() with .updateMany() as .update() is deprecated
+    model.Vacations.updateMany(criteria, doc, function (err, data) {
         callback(err, data)
 
     })
