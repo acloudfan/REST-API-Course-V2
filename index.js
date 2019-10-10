@@ -4,14 +4,8 @@
  * Checkout the API implementation in api/v1/vacations.js
  */
 
-// Provide the DB Parameters below
-// Copy & paste from the tests/TestDbOps.js *OR* edit
-// NOTE: your cluster location will be different than the one below!!!
-const DB_USER = "admin"
-const DB_PASSWORD = "admin123"
-const DB_NAME = "acmetravel"
-process.env.DB_URI = "mongodb+srv://"+DB_USER+":"+DB_PASSWORD+"@cluster0-46e5h.mongodb.net/"+DB_NAME+"?retryWrites=true&w=majority"
-
+// Setup the DB_URI
+process.env.DB_URI = require("./db/clouddb").DB_URI
 
 var express = require('express')
 var bodyParser = require('body-parser')
