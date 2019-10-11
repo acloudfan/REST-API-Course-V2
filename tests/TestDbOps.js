@@ -5,14 +5,9 @@
  */
 
 
-// The ../db/setting.js uses the environment variable DB_URI
-// Copy the connect string for the mongoDB cluster & paste below
-// Format =>  mongodb+srv://admin:<password>@cluster0-46e5h.mongodb.net/test?retryWrites=true&w=majority
-const DB_USER = "admin"
-const DB_PASSWORD = "admin123"
-const DB_NAME = "acmetravel"
 
-process.env.DB_URI = "mongodb+srv://"+DB_USER+":"+DB_PASSWORD+"@cluster0-46e5h.mongodb.net/"+DB_NAME+"?retryWrites=true&w=majority"
+// Setup the DB_URI
+process.env.DB_URI = require("./db/clouddb").DB_URI
 
 //Test#1  Insert the Vacation data
 var db = require('../db/vacations')
