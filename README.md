@@ -17,17 +17,19 @@ December 2017 Updated the DB Connection code
 Setup
 =====
 1. Clone this project on local file system
+> git clone https://github.com/acloudfan/REST-API-Course-V2.git
 2. Pre-requisistes
       a. Understanding of node/npm
       b. An instance of MongoDB available either locally or remotely
       c. Import the data available in the repository
-
 3. Run > npm install
       Deploys the packages
           express
           body-parser
           mongoose
 
+4. Switch between branches
+> git checkout  errorhandling
 
 
 Create from scratch

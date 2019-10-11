@@ -4,7 +4,6 @@
  * Adds the test data to the Database = vacation Collection = vacations
  */
 
-
 // Setup the DB_URI
 process.env.DB_URI = require("./db/clouddb").DB_URI
 
