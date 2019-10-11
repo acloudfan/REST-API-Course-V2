@@ -1,7 +1,12 @@
 
-process.env.DB_URI = "set this "
-process.env.DB_USER = "set this" /**provide the user id */
-process.env.DB_PASSWORD = "set this" /**provide the password */
+/**
+ * Launches the API Listener
+ * 
+ * Checkout the API implementation in api/v1/vacations.js
+ */
+
+// Setup the DB_URI
+process.env.DB_URI = require("./db/clouddb").DB_URI
 
 var express = require('express')
 var bodyParser = require('body-parser')
