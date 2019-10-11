@@ -5,14 +5,9 @@
  */
 
 
-<<<<<<< HEAD
 
 // Setup the DB_URI
-process.env.DB_URI = require("./db/clouddb").DB_URI
-=======
-// Setup the DB_URI
 process.env.DB_URI = require("../db/clouddb").DB_URI
->>>>>>> 52f4bf7a8cdce04a46b268e24c12ebfed6888b84
 
 //Test#1  Insert the Vacation data
 var db = require('../db/vacations')
