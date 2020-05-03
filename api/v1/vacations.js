@@ -1,5 +1,6 @@
 /**
  * Contains the definition of the API endpoints for vacation packages
+ * Updated 1/1/2020
  */
 // As a best practice keep the resource name same as the file name
 var RESOURCE_NAME = 'vacations';
