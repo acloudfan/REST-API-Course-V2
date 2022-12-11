@@ -24,7 +24,7 @@
   "homepage": "https://github.com/rajrin/URIDemo#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.7.3"
   }
 }
