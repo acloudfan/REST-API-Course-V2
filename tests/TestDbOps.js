@@ -40,7 +40,7 @@ db.saveMany(data.MultipleRows,function(err, docs){
 var selectCriteria = {validTill : {$gt : new Date()}}
 db.select(selectCriteria, function(err, data){
     if(err){
-        console.log("Failed to get vacations : %s",criteria)
+        console.log("Failed to get vacations : %s", selectCriteria)
         console.log(err)
     } else {
         console.log("Successfully selected %d documents for %s", data.length, JSON.stringify(selectCriteria))
